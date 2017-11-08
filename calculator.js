@@ -3,9 +3,8 @@ window.onload = function(){
     //virabile names
     var curValue = 0; // the resultl of equation
     var curEntry ="";
-    var equation = ""; // restore any input which compose together as equation
+    var equation = ""; // restore any input which compose together as an equation
     var flag = 0;      // indicate 
-    var rightside = "";
     var leftside = "";
     var prevEntry = "";
     
@@ -55,50 +54,9 @@ window.onload = function(){
         $('#display').html(curValue);
       }
       
-      if(curEntry === 'ec'){
+      /*if(curEntry === 'ec'){
           
-      }
-      
-      
-      
-      // if press "AC"
-      //set curValue = 0
-      //set equation = 0
-      
-      /*if(curEntry === "="){
-        // calculate the equation
-        curValue = eval(equation);
-        // output result which is curValue
-        $("#display").html(curValue);
-      }else{
-      equation += curEntry; //* get clicked button's value and append it to the equation string
-      $("#display").html(equation);
-      }
-      */
-
-      /*display
-        (1) AC -- curValue
-        (2) =  -- curValue(excute equation, assign the result to curValue)
-        (3) 2nd opt -- curValue like(2)
-        (4) enter a number after 1st opt -- number
-        (5) never display any operaters
-
-        right side = curValue
-        left side += curEntry
-          Initially
-          if curEntry  
-      */
-      /*if curValue = 0
-          curEntry can be an operater
-            equation = curvalue + curEntry e.g. equation = 0 +/-
-              if entry repeat operaters, they are invalid, ignore them
-              numbers should come after
-                after the number, if press any operater, that is the second operater in equation, then we automatically excute it and update the curValue, use a flag to indicate which is the second one
-                since curEntry is operater, update equation
-          curEntry can be a number
-            just update curValue equals that number
-      */
-      
+      } */      
     });
   });
 }
